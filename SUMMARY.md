@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [1.教学反转](0MOOC/README.md)
+   * 1.1 Week0：粮草未动，兵马先行
 * [基础旋进](1sTry/README.md)
 * [迭代作品](2nDev/README.md)
 * [人生首秀](3rDemo/README.md)
