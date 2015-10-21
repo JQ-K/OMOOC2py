@@ -19,10 +19,12 @@
       
      
 
-
 ### 填坑
 
 
 1.'a' 表示要向文件写入数据，但是添加到当前内容尾部
 > 参考：https://www.ibm.com/developerworks/cn/opensource/os-python8/
                 
+ 2 . 获取时间
+ 
+ > 参考：http://justcoding.iteye.com/blog/901758
