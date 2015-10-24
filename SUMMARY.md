@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [1.教学反转](0MOOC/README.md)
-   * 准备工作
+   * [准备工作](0MOOC/zhun_bei_gong_zuo.md)
 * [Week0：粮草未动，兵马先行](0MOOC/11_week0ff1a_liang_cao_wei_dong_ff0c_bing_ma_xian_xing.md)
 * [关于Git种种](0MOOC/guan_yu_git_zhong_zhong.md)
 * [2. 基础旋进](1sTry/README.md)
