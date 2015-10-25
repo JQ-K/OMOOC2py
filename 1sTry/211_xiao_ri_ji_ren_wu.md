@@ -5,7 +5,7 @@
 > 完成一个极简交互式日记系统，需求如下：
 > * 一次接收输入一行日记
 * 保存为本地文件
-* 再次运行系统时,能打印出过往的所有日记
+* 再次运行系统时,能打印出过往的所有日
 
 
 ### 挖坑：
@@ -17,62 +17,30 @@
       
       4. 文本换行
       
+      5.打开系统自动打印之前的所有记录，如果没有这个文件进行创建
      
 
-### 填坑
+### 基本思路：
+
+>* 代码不只是自己使用，别人第一次运行要确保其能创建一个新的日记文件并且保存 
+
+> * 所以代码第一部分需要判断有没有这个日记文件，需要用到 os.path.exists()命令进行判断
+
+> * 如果存在打开读取文件不存在创建文件使 if 函数，打开读取使用open/read 命令
+
+> 代码如下
+
+>     coding:utf-8  
+    from sys import argv
+    import time 
+    import os    
+    script, filename = argv
+    E = os.path.exists(filename) 
+    if str(E) == 'True': 
+        print txt.read()  
+    else:
+        print '尚无 %r ---创建之...' % filename
 
 
-1.'a' 表示要向文件写入数据，但是添加到当前内容尾部
-> 参考：https://www.ibm.com/developerworks/cn/opensource/os-python8/
-                
- 2 . 获取时间
- 
- > 参考：http://justcoding.iteye.com/blog/901758
- 
- 
- 
- 
- 
- 
- 
-### 代码
 
-> *# coding:utf-8   #解决中文字符问题
-from sys import argv
-import time #导入time 模块
-import os
-  
-script, filename = argv
-os.path.isfile(filename)  # txt = open(filename) #读取内容需先将其打开
-
-print "这是 %r 的内容:" % filename
-# print txt.read() #读取内容
-
-print "If you don't want that, hit CTRL-C (^C)."
-print "IF you do want this, hit return."
-
-raw_input("?")
-    
-print "Opening the file..."
-target = open(filename,"a") # 'a' 表示要向文件写入数据，但是添加到当前内容尾部
-
-
-print "输入新的内容:"
-
-content = raw_input("line 1: ")
-
-T = time .strftime('%Y-%m-%d %A %X %Z', time.localtime()) # 显示当下时间
-
-print T
-
-print "I'm going to write these to the file."
-
-target.write('\n' + content + '\n' + "---"+ T)
-
-
-print "And finally, we close it."
-target = open(filename)
-
-print target.read()
-target.close()
-# txt.close() # close 能否不用?
+>* 第二大块内容是写入需用 raw_input()
