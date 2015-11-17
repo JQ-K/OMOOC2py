@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [随手记](sui_shou_ji.md)
    * Python异常处理
-   * [Python socket network programming](python_socket_network_programming.md)
+   * Python socket network programming
 * [1.教学反转](0MOOC/README.md)
    * [准备工作](0MOOC/zhun_bei_gong_zuo.md)
    * [Linux  command line](0MOOC/linux_command_line.md)
