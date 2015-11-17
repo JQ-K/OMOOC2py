@@ -4,7 +4,6 @@
 * [1.教学反转](0MOOC/README.md)
    * [准备工作](0MOOC/zhun_bei_gong_zuo.md)
    * [Linux  command line](0MOOC/linux_command_line.md)
-   * 随手记
 * [2. 基础旋进](1sTry/README.md)
 * [迭代作品](2nDev/README.md)
 * [人生首秀](3rDemo/README.md)
