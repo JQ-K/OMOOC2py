@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+   * 随手记
 * [1.教学反转](0MOOC/README.md)
    * [准备工作](0MOOC/zhun_bei_gong_zuo.md)
    * [Linux  command line](0MOOC/linux_command_line.md)
