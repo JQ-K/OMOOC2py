@@ -6,13 +6,13 @@ sys.setdefaultencoding('utf-8')
 from jqk_dairy import *
 
 root = Tk()
-root.title("kang's diary")
-root.geometry('400x400')
-w = Label(root, text="Welcom to kang's diary", pady=20)
+root.title("kang's diary")#命名
+root.geometry('400x400')#尺寸
+w = Label(root, text="Welcom to kang's diary", pady=20)#输入框的设置
 
-w.pack()
+w.pack()#显示输入框
 
-var = StringVar(value="What do you want to write today?")
+var = StringVar(value="What do you want to write today?")#字符变量StringVar跟踪变量值的变化
 
 text_input = Entry(root, textvariable=var,width=36)
 text_input.pack()
