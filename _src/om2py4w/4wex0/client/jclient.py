@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
-import requests
-from bs4 import BeautifulSoup
+import requests #requests 使用说明http://docs.python-requests.org/en/master/
+from bs4 import BeautifulSoup #beautifulsoup :https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/
 
 def main():
 	print 'Type "q" or "quit" to exit.'
@@ -9,11 +9,11 @@ def main():
 	print 'Type anything else as a new note.'
 
 	while True:
-		INPUT = raw_input('$ ').strip()
-		inp = 	INPUT.lower()
-		if inp in ['quit','q']:
+		INPUT = raw_input('$ ').strip()#$是输入前的指示符，strip（）消除字符两端的空格
+		inp = 	INPUT.lower()#大写转小写
+		if inp in ['quit','q']:#设置关键词
 			break
-		elif inp in ['list','l']:
+		elif inp in ['list','l']:#设置关键词
 			print listnotes()
 		else:
 			addnote(INPUT)
